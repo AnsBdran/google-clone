@@ -1,0 +1,28 @@
+$text: #fff;
+$alt-text: #89b3f6;
+$bg: #202123;
+$alt-bg: #181818;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    font-family: arial, sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+input {
+    display: block;
+}
+
+a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,44 @@
+@use "base" as *;
+
+main {
+    background-color: $bg;
+    color: $text;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+    justify-content: end;
+
+    &__links {
+        display: flex;
+    }
+
+    &__icons {
+        .dots {
+            width: 1.5rem;
+        }
+    }
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    color: darken($color: $text, $amount: 50%);
+    background-color: $alt-bg;
+    &__links {
+        display: flex;
+        justify-content: space-between;
+
+        & > * {
+            display: flex;
+        }
+    }
+}

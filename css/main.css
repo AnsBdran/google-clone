@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  font-family: arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input {
+  display: block;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+main {
+  background-color: #202123;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  justify-content: end;
+}
+.nav__links {
+  display: flex;
+}
+.nav__icons .dots {
+  width: 1.5rem;
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  color: gray;
+  background-color: #181818;
+}
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__links > * {
+  display: flex;
+}
+
+/*# sourceMappingURL=main.css.map */
