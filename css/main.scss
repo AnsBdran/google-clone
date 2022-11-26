@@ -34,15 +34,17 @@ main {
 
     &__icons {
         display: flex;
+        align-items: center;
         gap: 0.5rem;
+
         .icon {
-            padding: 0.3rem;
+            padding: 0.6rem;
             // border: 1px solid red;
             border-radius: 50%;
             cursor: pointer;
             @include center;
             img {
-                width: 2rem;
+                width: 1.5rem;
             }
 
             &:hover {
@@ -63,7 +65,7 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: -150px;
+    margin-top: -130px;
     // width: auto;
     // align-self: stretch;
     // margin-inline: auto;
@@ -78,12 +80,12 @@ main {
     .search-field {
         background-color: darken($color: $bg, $amount: 0.5%);
         // border: 1px solid darken($color: $text, $amount: 50%);
-        border: 1px solid #3b3b3b;
+        border: 1px solid #646464;
         border-radius: 1.5rem;
         height: 2.75rem;
         // width: auto;
         max-width: 560px;
-        margin-top: 1.25rem;
+        margin-top: 1.6rem;
         margin-inline: auto;
         padding: 0.5rem 1rem;
         display: flex;
