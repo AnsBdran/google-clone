@@ -15,19 +15,20 @@ main {
 .icon {
     cursor: pointer;
 }
+
 // ==================================================================================
 // nav styles ======================================================================
 .nav {
     display: flex;
     justify-content: end;
     align-items: center;
-    padding: 0.8rem 1rem;
+    padding: 0.5rem 0.8rem;
     gap: 1rem;
     // border: 1px solid red;
 
     &__links {
         display: flex;
-        gap: 0.5rem;
+        gap: 1rem;
         font-size: 0.8125rem;
     }
 
@@ -161,7 +162,7 @@ main {
         // justify-content: space-around;
         justify-content: space-between;
         flex-wrap: wrap;
-        padding-inline: 1rem;
+        padding-inline: 1.2rem;
         li {
             display: inline-block;
         }
@@ -172,7 +173,7 @@ main {
         }
         a {
             display: block;
-            padding: 1rem;
+            padding: 0.9rem 0.8rem;
             font-size: 0.875rem;
         }
         // }

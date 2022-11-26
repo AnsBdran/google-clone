@@ -1,3 +1,3 @@
 # Google Clone
 
-t
+see this project live [from this link](https://ansbdran.github.io/google-clone/)

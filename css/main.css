@@ -51,12 +51,12 @@ main {
   display: flex;
   justify-content: end;
   align-items: center;
-  padding: 0.8rem 1rem;
+  padding: 0.5rem 0.8rem;
   gap: 1rem;
 }
 .nav__links {
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
   font-size: 0.8125rem;
 }
 .nav__icons {
@@ -161,14 +161,14 @@ main {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-inline: 1rem;
+  padding-inline: 1.2rem;
 }
 .footer__links li {
   display: inline-block;
 }
 .footer__links a {
   display: block;
-  padding: 1rem;
+  padding: 0.9rem 0.8rem;
   font-size: 0.875rem;
 }
 
