@@ -8,37 +8,151 @@ main {
     flex-direction: column;
     justify-content: space-between;
 }
+* {
+    // border: 1px solid red;
+}
 
+// ==================================================================================
+// nav styles ======================================================================
 .nav {
     display: flex;
     justify-content: end;
+    align-items: center;
+    padding: 0.8rem 1rem;
+    gap: 1rem;
+    // border: 1px solid red;
 
     &__links {
         display: flex;
+        gap: 0.5rem;
+        font-size: 0.8125rem;
     }
 
     &__icons {
+        display: flex;
+        gap: 0.5rem;
+        .icon {
+            padding: 0.5rem;
+            // border: 1px solid red;
+            border-radius: 50%;
+            cursor: pointer;
+            @include center;
+
+            &:hover {
+                background-color: lighten($color: $bg, $amount: 10%);
+            }
+        }
         .dots {
             width: 1.5rem;
         }
     }
 }
-
+// ==================================================================================
+// form styles ======================================================================
 .form-wrapper {
+    // .form-content {
+    // }
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    // width: auto;
+    // align-self: stretch;
+    // margin-inline: auto;
+    // border: 2px solid red;
+    // margin: 0 auto;
+    // width: max-content;
+    form {
+        // border: 2px solid red;
+        align-self: stretch;
+    }
+
+    .search-field {
+        background-color: darken($color: $bg, $amount: 1%);
+        border: 1px solid darken($color: $text, $amount: 50%);
+        border-radius: 1.5rem;
+        height: 2.75rem;
+        // width: auto;
+        max-width: 555px;
+        margin-top: 1.25rem;
+        margin-inline: auto;
+        padding: 0.5rem 1rem;
+        display: flex;
+        justify-content: start-between;
+        align-items: center;
+        gap: 1rem;
+
+        &:hover {
+            background-color: lighten($color: $bg, $amount: 10%);
+            border: none;
+        }
+        .icon {
+            height: 1.25rem;
+            width: 1.25rem;
+            cursor: text;
+        }
+
+        input {
+            flex: 1;
+            color: #fff;
+            font-size: 1rem;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    .btns {
+        margin-inline: auto;
+        width: max-content;
+        padding-block: 1.1rem;
+        display: flex;
+        gap: 0.8rem;
+        // border: 2px solid red;
+
+        button {
+            background-color: lighten($color: $bg, $amount: 10%);
+            color: darken($color: $text, $amount: 5%);
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            font-size: 0.875rem;
+        }
+    }
+
+    p {
+        font-size: small;
+        a {
+            color: #8ab4f8;
+        }
+    }
 }
+
+// ==================================================================================
+// form styles ======================================================================
 
 .footer {
     color: darken($color: $text, $amount: 50%);
     background-color: $alt-bg;
+
+    p {
+        padding: 1rem 2rem;
+        border-bottom: 0.5px solid #ddd;
+        font-size: 0.9rem;
+    }
     &__links {
         display: flex;
         justify-content: space-between;
-
+        li {
+            display: inline-block;
+        }
         & > * {
-            display: flex;
+            // display: flex;
+            a {
+                display: block;
+                padding: 1rem;
+                font-size: 0.875rem;
+            }
         }
     }
 }

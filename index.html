@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" href="imgs/favicon.ico" />
     <title>Google Clone</title>
   </head>
   <body>
@@ -17,17 +18,27 @@
           <li><a href="#">Images</a></li>
         </div>
         <div class="nav__icons">
-          <img src="imgs/9dots.svg" class="dots" alt="" />
+          <div class="icon">
+            <img src="imgs/9dots.svg" class="dots" alt="" />
+          </div>
+          <div class="icon"><span>pic</span></div>
         </div>
       </section>
       <!-- ============================ -->
       <!-- Form Section ============================ -->
       <section class="form-wrapper">
         <!-- <h1 class="title">Google</h1> -->
+        <!-- <div class="form-content"> -->
         <img src="imgs/google.png" alt="Google " />
         <form action="#">
-          <div class="search">
+          <!-- ====== Search Field ====== -->
+          <div class="search-field">
+            <div class="icon">
+              <img src="imgs/search.svg" alt="search icon" />
+            </div>
             <input type="text" />
+            <div class="icon"><img src="imgs/mic.svg" alt="mic icon" /></div>
+            <div class="icon"><img src="imgs/cam.svg" alt="Camera icon" /></div>
           </div>
           <div class="btns">
             <button>Google Search</button>
@@ -35,6 +46,7 @@
           </div>
         </form>
         <p>Google offered in: <a href="#">العربية</a></p>
+        <!-- </div> -->
       </section>
       <!-- ============================ -->
       <!-- Top Bar Section ============================ -->
