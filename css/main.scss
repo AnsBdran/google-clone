@@ -1,6 +1,6 @@
 @use "base" as *;
 
-main {
+body {
     background-color: $bg;
     color: $text;
     min-height: 100vh;
